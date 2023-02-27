@@ -1,0 +1,58 @@
+.main_navbar{
+    height: 100%;
+    width: 100%;
+}
+
+.imageBorder{
+    border: 2px solid #20c997;
+    padding: 2px;
+    border-radius: 99px;
+}
+.btnView{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.img_view{
+    height: 80px;
+    width: 80px;
+    background-color: #FFFFFF;
+}
+
+.heading_subheading_view{
+    padding-left: 2px;
+}
+.first_heading{
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.second_subHeading{
+    font-size: 20px;
+    color: #a9a9a9;
+}
+
+.line{
+    height: 10px;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.btnText{
+    cursor: pointer;
+    padding: 10px 30px;
+    // padding-bottom: 16px;
+    // padding-right: 50px;
+    color: #FFFFFF;
+}
+
+.btnText:active{
+    background-color: #20c997;
+    // border: 2px solid;
+    border-radius: 50px;
+    
+}
+

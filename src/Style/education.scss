@@ -1,0 +1,91 @@
+h2{
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+h3{
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.boxView{
+    // padding: 50px;
+    padding-bottom: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.front_box_text{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: "Josefin Sans";
+}
+.box{
+    text-align: center;
+    height: 35px;
+    width: 150px;
+    background-color: #20c99c;
+}
+
+.flip_card {
+    background-color: transparent;
+    width: 200px;
+    height: 180px;
+    cursor:context-menu;
+    perspective: 1000px; 
+}
+
+.flip_card_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip_card:hover .flip_card_inner {
+    transform: rotateY(180deg);
+}
+
+.flip_card_front,
+.flip_card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip_card_front {
+    background-color: #4c4d4d;
+    color: black;
+    border-radius: 20px;
+    background-image: url('https://simg.nicepng.com/png/small/778-7780243_1-100-undergraduate-and-700-graduate-students-transparent.png');
+    width: 100%;
+    height: 100%;
+}
+
+.flip_card_back {
+    background-color: #212529;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.date_box_view{
+    padding-left: 25px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.date_text{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding-top: 3px;
+}

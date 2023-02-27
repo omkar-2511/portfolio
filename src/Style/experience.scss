@@ -1,0 +1,221 @@
+.mainBox {
+    background-color: #4c4d4d;
+    height: 100vh;
+    width: 100%;
+    // margin-top: 65px;
+}
+.surroundedBox {
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    background-color: #20c99c;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.p_text_style {
+    color: #ffffff;
+    font-size: 20px;
+}
+h4 {
+    font-size: 20px;
+    color: #20c99c;
+}
+.inner_date_box {
+    text-align: center;
+    height: 35px;
+    background-color: #20c99c;
+    color: #ffffff;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.inner_box_text {
+    padding-left: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Josefin Sans";
+}
+
+.inner_box_subText {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.timelineView{
+    // padding-top: 50px;
+}
+.timeline {
+    position: relative;
+    left: 2%;
+    // padding-bottom: 24%;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #20c99c;
+    top: 0;
+    bottom: 0;
+}
+
+.container {
+    padding: 10px 40px;
+    // padding-bottom: ;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    left: 50%;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 4px solid #20c99c;
+    top: 20px;
+    border-radius: 50%;
+}
+
+.right {
+    left: 10px;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #212529;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #212529;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #212529;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #212529 transparent transparent;
+}
+
+.right::after {
+    left: -19px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: #212529;
+    position: relative;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 22px;
+    }
+
+    .right {
+        left: 0%;
+    }
+}
+
+.fade_in_image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.boxContainer {
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}

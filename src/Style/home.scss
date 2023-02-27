@@ -1,0 +1,102 @@
+.textBox {
+    padding-top: 200px;
+    justify-items: center;
+    align-content: center;
+    word-wrap: break-word;
+}
+h1 {
+    padding-top: 20px;
+    color: hsl(0, 0%, 28%);
+    font-size: 32px;
+    word-wrap: break-word;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    font-family: "Josefin Sans";
+}
+
+h1 {
+    background: linear-gradient(to right, hsl(0, 0, 100%) 0, hsl(0, 0%, 10%) 10%, hsl(0, 0%, 100%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+}
+
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+    // 60% {
+    //     background-position: 600px;
+    // }
+    100% {
+        background-position: 600px;
+    }
+}
+.mainHeading{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Josefin Sans";
+    word-wrap:break-word;
+    padding-top: 20px;
+}
+.subText {
+    font-size: 30px;
+    color: #dee3e4;
+    text-align: center;
+    font-family: "Josefin Sans";
+    padding-top: 20px;
+}
+.heading{
+    // display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.heading:first-of-type{
+    animation: showup 7s infinite ;
+}
+.heading:last-of-type{
+    animation: reveal 7s infinite;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+    30% {
+        width: 50%;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 100%;
+    }
+}
