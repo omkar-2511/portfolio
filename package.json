@@ -1,0 +1,37 @@
+{
+  "name": "root",
+  "private": true,
+  "useWorkspaces": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "start": "lerna run start --stream",
+    "build": "lerna run build",
+    "prettier": "lerna run prettier",
+    "lint": "lerna run lint",
+    "copy": "lerna run copy --stream"
+  },
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/am-daily-services/new-framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/am-daily-services/new-framework/issues"
+  },
+  "homepage": "https://gitlab.com/am-daily-services/new-framework#readme",
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "moment": "^2.29.3",
+    "react-bootstrap": "^2.3.1"
+  }
+}
